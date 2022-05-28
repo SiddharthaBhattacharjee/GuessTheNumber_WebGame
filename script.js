@@ -5,6 +5,15 @@ let sc = document.getElementById('score');
 let dialog = document.getElementById('dialogue');
 ox = document.getElementById('guesst');
 function guesser(){
+    if(turn==0){
+        setTimeout(rite=>{
+            dialog.innerHTML = "<br><br> You LOST ;-; <br> The number was "+r;
+        },400);
+        setTimeout(reset=>{
+            alert("You Lost! :(  The Number was : "+r+"\nTry Again?");
+            location.reload();
+        },1000);
+    }
     x = ox.value;
     if(x>0 && x<=100){
         turn--;
@@ -37,15 +46,6 @@ function guesser(){
             dialog.innerHTML = "<br><br> Input is invalid -_- <br> Please try again!";
         },200);
         
-    }
-    if(turn==0){
-        setTimeout(rite=>{
-            dialog.innerHTML = "<br><br> You LOST ;-; <br> The number was "+r;
-        },400);
-        setTimeout(reset=>{
-            alert("You Lost! :(  The Number was : "+r+"\nTry Again?");
-            location.reload();
-        },1000);
     }
 }
 
