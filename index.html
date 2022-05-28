@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Guess The Number</title>
+    <link rel="icon" href="assets/icon.png">
 </head>
 <body>
     <canvas id='Matrix'></canvas>
@@ -21,13 +22,13 @@
         <section id="ui">
             <span id="guess">Take A Guess:</span>
             <input type="number" id="guesst" placeholder="Enter your Guess">
-            <button id="submit">Submit</button>
+            <button id="submit" onclick="guesser()">Submit</button>
         </section>
-        <div id="score">Number Of Guesses Left : 10<br></div>
+        <div id="score">Number Of Guesses Left : 07<br></div>
         <div id="inst"><b>Instructions :</b>
             <ul>
-                <li>The number I generated is between 1 and 100</li>
-                <li>You have to guess the number in 10 tries</li>
+                <li>The number I generated is between 1 and 100 (1 & 100 included)</li>
+                <li>You have to guess the number in 7 tries</li>
                 <li>If you guess the number, you win</li>
                 <li>If you don't guess the number, you lose</li>
             </ul>
